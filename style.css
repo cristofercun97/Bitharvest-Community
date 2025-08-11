@@ -1085,3 +1085,175 @@ body {
   border: none;
   border-radius: 15px;
 }
+
+/* ========== ARREGLOS ESPECÍFICOS RESPONSIVE ========== */
+
+/* TESTIMONIOS RESPONSIVE - MEJORADO */
+@media (max-width: 768px) {
+  .testimonios {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+  
+  .testimonios h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-grid {
+    display: block; /* Cambiar de grid a block */
+    gap: 0;
+  }
+  
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(248, 104, 0, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .testimonial-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-style: italic;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row; /* Mantener horizontal en móvil */
+  }
+  
+  .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(248, 104, 0, 0.3);
+    flex-shrink: 0;
+  }
+  
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .author-info .name {
+    font-weight: 600;
+    color: #ff8c42;
+    font-size: 1rem;
+  }
+  
+  .author-info .role {
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+}
+
+/* FOOTER RESPONSIVE - MEJORADO */
+@media (max-width: 768px) {
+  footer {
+    background: linear-gradient(135deg, #1a1a3a 0%, #2d2d5f 100%);
+    border-top: 1px solid rgba(248, 104, 0, 0.2);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  footer a {
+    color: #ff8c42;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  footer a:hover {
+    color: #f86800;
+    text-decoration: underline;
+  }
+}
+
+/* MÓVILES MUY PEQUEÑOS */
+@media (max-width: 480px) {
+  .testimonios {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quote {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .author {
+    gap: 0.8rem;
+  }
+  
+  .author img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .author-info .name {
+    font-size: 0.9rem;
+  }
+  
+  .author-info .role {
+    font-size: 0.8rem;
+  }
+  
+  footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ASEGURAR QUE EL FOOTER NO SE CORTE */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 0; /* Quitar padding bottom si existe */
+  }
+  
+  .marquee-container {
+    margin-top: 0;
+  }
+}
+
+/* MEJORAR ESPACIADO GENERAL EN MÓVIL */
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .contacto-formulario {
+    margin-bottom: 2rem;
+  }
+}
