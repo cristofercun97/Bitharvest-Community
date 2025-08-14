@@ -1,3 +1,29 @@
+// FUNCIÓN PARA MANEJAR LAS TABS DE PROYECCIÓN - FUERA DEL DOMContentLoaded
+function showTab(tabName) {
+  // Ocultar todas las tabs
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(tab => {
+    tab.classList.remove('active');
+  });
+  
+  // Remover clase active de todos los botones
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => {
+    button.classList.remove('active');
+  });
+  
+  // Mostrar la tab seleccionada
+  const selectedTab = document.getElementById(tabName);
+  if (selectedTab) {
+    selectedTab.classList.add('active');
+  }
+  
+  // Activar el botón correspondiente
+  event.target.classList.add('active');
+  
+  console.log('Tab cambiada a:', tabName); // Para debug
+}
+
 // Animaciones suaves sin interferir con el scroll
 document.addEventListener('DOMContentLoaded', function() {
     // Configuración del observer
@@ -292,4 +318,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const keyElements = document.querySelectorAll('h1, h2, p, .card, .feature-box');
         keyElements.forEach(el => mobileObserver.observe(el));
     }
+
+    // Inicializar tabs después de que el DOM esté cargado
+    console.log('DOM cargado, verificando tabs...');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    console.log('Botones encontrados:', tabButtons.length);
+    console.log('Contenidos encontrados:', tabContents.length);
 });
