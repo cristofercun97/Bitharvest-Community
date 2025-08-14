@@ -280,7 +280,7 @@
       </div>
     </div>
 
-    <!-- TABLA 2: PROYECCIÓN PERSONAL (ESTA SE MUESTRA AL HACER CLIC) -->
+    <!-- TABLA 2: PROYECCIÓN PERSONAL -->
     <div id="personal" class="tab-content">
       <h3>👤 Proyección de Ingresos Personales - Team 90</h3>
       <p class="tabla-descripcion">
@@ -295,11 +295,12 @@
               <th>Compra Personal (Booster)</th>
               <th>Valor Booster</th>
               <th>Afiliación # Personas</th>
-              <th>Cuentas Propias C/1</th>
               <th>Valor x Booster</th>
               <th>Ingresos Regalías 5%</th>
-              <th>Valor Acumulado</th>
-              <th>Ingresos Mensuales</th>
+              <th>Valor Acum</th>
+              <th>Ingresos Mensuales x Booster*</th>
+              <th>Ingresos Regalías x 30**</th>
+              <th>Valores Acumulados</th>
             </tr>
           </thead>
           <tbody>
@@ -307,159 +308,257 @@
               <td>1 Estrella</td>
               <td>1</td>
               <td>$1,500</td>
-              <td>5</td>
-              <td>20</td>
-              <td>$30,000</td>
-              <td>$1,500</td>
-              <td>$1,500</td>
-              <td class="highlight">$720</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>9</td>
-              <td>36</td>
-              <td>$54,000</td>
-              <td>$2,700</td>
-              <td>$4,200</td>
-              <td></td>
+              <td>10</td>
+              <td>$15,000</td>
+              <td>$105</td>
+              <td>$105</td>
+              <td class="highlight">$210</td>
+              <td>$3,150</td>
+              <td>$3,150</td>
             </tr>
             <tr>
               <td>2 Estrella</td>
               <td>3</td>
               <td>$4,500</td>
-              <td>30</td>
-              <td>120</td>
+              <td>90</td>
               <td>$135,000</td>
-              <td>$6,750</td>
-              <td>$10,950</td>
-              <td class="highlight">$2,160</td>
+              <td>$945</td>
+              <td>$1,050</td>
+              <td class="highlight">$630</td>
+              <td>$28,350</td>
+              <td>$31,500</td>
             </tr>
             <tr>
               <td></td>
               <td></td>
-              <td></td>
-              <td>81</td>
-              <td>324</td>
-              <td>$486,000</td>
-              <td>$24,300</td>
-              <td>$35,250</td>
-              <td></td>
+              <td>-</td>
+              <td>100</td>
+              <td>$150,000</td>
+              <td>$1,050</td>
+              <td>$2,100</td>
+              <td class="highlight">$630</td>
+              <td>$31,500</td>
+              <td>$63,000</td>
             </tr>
             <tr>
               <td>3 Estrella</td>
               <td>5</td>
               <td>$7,500</td>
-              <td>90</td>
-              <td>360</td>
+              <td>270</td>
               <td>$405,000</td>
-              <td>$20,250</td>
-              <td>$55,500</td>
-              <td class="highlight">$3,600</td>
+              <td>$2,835</td>
+              <td>$4,935</td>
+              <td class="highlight">$1,050</td>
+              <td>$85,050</td>
+              <td>$148,050</td>
             </tr>
-            <tr>
+            <tr class="resultado-destacado">
               <td>4 Estrella</td>
               <td>15</td>
               <td>$22,500</td>
-              <td>267</td>
-              <td>1,067</td>
+              <td>800</td>
               <td>$1,200,000</td>
-              <td>$60,000</td>
-              <td>$115,500</td>
-              <td class="highlight">$10,800</td>
+              <td>$8,400</td>
+              <td>$13,335</td>
+              <td class="highlight-major">$3,150</td>
+              <td>$252,000</td>
+              <td>$400,050</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>-</td>
+              <td>1,000</td>
+              <td>$1,500,000</td>
+              <td>$10,500</td>
+              <td>$23,835</td>
+              <td class="highlight">$3,150</td>
+              <td>$315,000</td>
+              <td>$715,050</td>
             </tr>
             <tr>
               <td>5 Estrella</td>
               <td>30</td>
               <td>$45,000</td>
-              <td>667</td>
-              <td>2,667</td>
+              <td>2,000</td>
               <td>$3,000,000</td>
-              <td>$150,000</td>
-              <td>$265,500</td>
-              <td class="highlight">$21,600</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>729</td>
-              <td>2,916</td>
-              <td>$4,374,000</td>
-              <td>$218,700</td>
-              <td>$484,200</td>
-              <td></td>
+              <td>$21,000</td>
+              <td>$44,835</td>
+              <td class="highlight">$6,300</td>
+              <td>$630,000</td>
+              <td>$1,345,050</td>
             </tr>
             <tr>
               <td>6 Estrella</td>
               <td>50</td>
               <td>$75,000</td>
-              <td>2,000</td>
-              <td>8,000</td>
+              <td>6,000</td>
               <td>$9,000,000</td>
-              <td>$450,000</td>
-              <td>$934,200</td>
-              <td class="highlight">$36,000</td>
+              <td>$63,000</td>
+              <td>$107,835</td>
+              <td class="highlight">$10,500</td>
+              <td>$1,890,000</td>
+              <td>$3,235,050</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>-</td>
+              <td>10,000</td>
+              <td>$15,000,000</td>
+              <td>$105,000</td>
+              <td>$212,835</td>
+              <td class="highlight">$10,500</td>
+              <td>$3,150,000</td>
+              <td>$6,385,050</td>
             </tr>
             <tr>
               <td>7 Estrella</td>
               <td>60</td>
               <td>$90,000</td>
-              <td>5,000</td>
-              <td>20,000</td>
+              <td>15,000</td>
               <td>$22,500,000</td>
-              <td>$1,125,000</td>
-              <td>$2,059,200</td>
-              <td class="highlight">$43,200</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>6,561</td>
-              <td>26,244</td>
-              <td>$39,366,000</td>
-              <td>$1,968,300</td>
-              <td>$4,027,500</td>
-              <td></td>
+              <td>$157,500</td>
+              <td>$370,335</td>
+              <td class="highlight">$12,600</td>
+              <td>$4,725,000</td>
+              <td>$11,110,050</td>
             </tr>
             <tr class="resultado-final">
               <td>8 Estrella</td>
               <td>70</td>
               <td>$105,000</td>
-              <td>10,000</td>
-              <td>40,000</td>
-              <td>$60,000,000</td>
-              <td>$3,000,000</td>
-              <td>$7,027,500</td>
-              <td class="highlight-final">$50,400</td>
+              <td>30,000</td>
+              <td>$45,000,000</td>
+              <td>$315,000</td>
+              <td>$685,335</td>
+              <td class="highlight-final">$14,700</td>
+              <td>$9,450,000</td>
+              <td>$20,560,050</td>
             </tr>
           </tbody>
         </table>
       </div>
       
+      <div class="proyeccion-nota">
+        <div class="nota-item">
+          <p><strong>* Los ingresos mensuales son estimados según la cantidad de boosters que tenga cada persona, valor del BTC, y la rentabilidad del booster</strong></p>
+        </div>
+        <div class="nota-item">
+          <p><strong>** Se asume que cada persona llega a subirse a 30 booster por lo menos cada cuenta (para subir de rango se seguirá subiendo hasta 70 boost)</strong></p>
+        </div>
+        <div class="nota-item">
+          <p><strong>1 La columna 1 son las regalías que se tiene por la cantidad de boosters que se tiene en la organización</strong></p>
+        </div>
+        <div class="nota-item">
+          <p><strong>2 La columna 2 son los rendimientos mensuales por la cantidad de boosters que van adquiriendo cada persona para subir de rango</strong></p>
+        </div>
+      </div>
+
       <div class="proyeccion-resumen">
         <h4>🎯 Resumen de tu Camino hacia la Abundancia</h4>
         <div class="resumen-cards">
+          <div class="resumen-card destacado-principal">
+            <h5>🚀 Reto 90 Días BitHarvest</h5>
+            <div class="reto-content">
+              <p><strong>Objetivo:</strong> Iniciar el camino hacia la libertad financiera en 90 días participando en BitHarvest, un proyecto que apoya el minado de Bitcoin y usa automatización con IA para prospectar y duplicar resultados.</p>
+              
+              <div class="como-funciona">
+                <h6>Cómo funciona</h6>
+                <ul>
+                  <li><strong>Ingreso sugerido:</strong> "Booster" de 1.500 USDT (también existen opciones desde 100 o 1.000 USDT).</li>
+                  <li><strong>Rendimiento estimado:</strong> 12–14% mensual pagado a diario por hasta 5 años.</li>
+                  <li><strong>Recuperación estimada:</strong> ~8 meses (más rápido si invitas socios).</li>
+                  <li><strong>Estrategia:</strong> seguir un plan de acción diario y un sistema de duplicación para sumar y formar a nuevos socios.</li>
+                </ul>
+              </div>
+
+              <div class="meta-reto">
+                <h6>Meta del reto</h6>
+                <ul>
+                  <li>Prospectar 1 persona por día y construir un equipo de 10 socios que se dupliquen.</li>
+                  <li><strong>Proyección ejemplo (90 días):</strong> alcanzar 1.000 socios.</li>
+                  <li><strong>Ingresos por red (columna 1):</strong> ~US$ 23.835/mes.</li>
+                  <li><strong>Ingresos propios con 15 Boosters (columna 2, rango 4★):</strong> ~US$ 3.150/mes.</li>
+                  <li class="total-destacado"><strong>Total estimado:</strong> ~US$ 26.985/mes.</li>
+                </ul>
+                <p class="nota-crecimiento">Los ingresos crecerían al subir de rango y sumar Boosters.</p>
+              </div>
+
+              <div class="aviso-importante">
+                <h6>⚠️ Aviso importante</h6>
+                <p>Las cifras anteriores son proyecciones internas y pueden variar según el número real de socios, el precio de BTC, el desempeño del proyecto y otros factores. No constituyen garantía de resultados ni asesoría financiera.</p>
+              </div>
+            </div>
+          </div>
+          
           <div class="resumen-card">
-            <h5>🚀 Meta 90 Días</h5>
-            <p>Rango 4 Estrellas</p>
-            <p class="amount">$10,800/mes</p>
-          </div>
-          <div class="resumen-card destacado">
             <h5>💎 Objetivo Abundancia</h5>
-            <p>Rango 8 Estrellas</p>
-            <p class="amount-major">$50,400/mes</p>
+            <div class="objetivo-content">
+              <p class="rango-objetivo">Rango 8 Estrellas</p>
+              <p class="amount-major">$14,700/mes</p>
+              <small>+ Regalías de $9,450,000</small>
+              
+              <div class="objetivo-detalles">
+                <h6>🎯 Beneficios del Rango Máximo:</h6>
+                <ul class="beneficios-abundancia">
+                  <li>💰 Ingresos pasivos garantizados</li>
+                  <li>🌍 Libertad geográfica total</li>
+                  <li>⏰ Tiempo libre para tu familia</li>
+                  <li>🚀 Crecimiento exponencial continuo</li>
+                  <li>👥 Red global de abundancia</li>
+                  <li>📈 Patrimonio generacional</li>
+                </ul>
+                
+                <div class="logros-destacados">
+                  <p><strong>🏆 Al alcanzar 8 Estrellas:</strong></p>
+                  <p class="logro-item">• 70 Boosters personales</p>
+                  <p class="logro-item">• 30,000+ socios en tu red</p>
+                  <p class="logro-item">• $60M+ volumen generado</p>
+                  <p class="logro-item">• Libertad financiera total</p>
+                </div>
+              </div>
+            </div>
           </div>
+          
           <div class="resumen-card">
             <h5>⏱️ Tiempo Estimado</h5>
-            <p>6-12 meses</p>
-            <p class="amount">Con constancia</p>
+            <div class="tiempo-content">
+              <p class="tiempo-principal">6-12 meses</p>
+              <p class="con-constancia">Con constancia</p>
+              
+              <div class="cronograma">
+                <h6>📅 Cronograma de Crecimiento:</h6>
+                <div class="fase">
+                  <p class="fase-titulo">🚀 Fase Inicial (0-3 meses)</p>
+                  <p class="fase-desc">Aprende el sistema y construye tu base</p>
+                  <p class="fase-meta">Meta: Rango 1-2 Estrellas</p>
+                </div>
+                
+                <div class="fase">
+                  <p class="fase-titulo">💪 Fase Crecimiento (3-6 meses)</p>
+                  <p class="fase-desc">Duplica tu equipo y aumenta ingresos</p>
+                  <p class="fase-meta">Meta: Rango 3-4 Estrellas</p>
+                </div>
+                
+                <div class="fase">
+                  <p class="fase-titulo">🏆 Fase Expansión (6-12 meses)</p>
+                  <p class="fase-desc">Lidera equipos y maximiza rendimientos</p>
+                  <p class="fase-meta">Meta: Rango 5-8 Estrellas</p>
+                </div>
+                
+                <div class="factores-clave">
+                  <h6>🔑 Factores Clave del Éxito:</h6>
+                  <p>• Consistencia diaria</p>
+                  <p>• Mentoría constante</p>
+                  <p>• Reinversión inteligente</p>
+                  <p>• Red de apoyo activa</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     <div class="proyeccion-cta">
       <h3>🔥 ¿Listo para comenzar tu proyección hacia la abundancia?</h3>
