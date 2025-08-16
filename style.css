@@ -2061,6 +2061,76 @@ body {
     font-size: 2rem;
   }
   
+
+/* RESPONSIVE MEJORADO PARA SECCIÓN RESUMEN Y PROYECCIÓN */
+@media (max-width: 768px) {
+  .proyeccion-reto90, .filosofia-abundancia {
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+  }
+  .table-wrapper {
+    margin: 1rem -0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+  .proyeccion-table {
+    font-size: 0.7rem;
+    min-width: 600px;
+  }
+  .proyeccion-table th, .proyeccion-table td {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem;
+  }
+  .proyeccion-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  /* Apilar columnas de resumen si existen */
+  .resumen-camino, .resumen-col, .resumen-flex, .resumen-row {
+    flex-direction: column !important;
+    display: flex !important;
+    gap: 1rem;
+  }
+  .resumen-col > div, .resumen-flex > div, .resumen-row > div {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .resumen-card, .resumen-box, .resumen-panel {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .proyeccion-reto90, .filosofia-abundancia {
+    padding: 0.5rem 0.2rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+  }
+  .table-wrapper {
+    margin: 0.5rem -0.2rem;
+    border-radius: 6px;
+  }
+  .proyeccion-table {
+    font-size: 0.55rem;
+    min-width: 400px;
+  }
+  .proyeccion-table th, .proyeccion-table td {
+    padding: 0.2rem 0.1rem;
+    font-size: 0.55rem;
+  }
+  .resumen-camino, .resumen-col, .resumen-flex, .resumen-row {
+    flex-direction: column !important;
+    display: flex !important;
+    gap: 0.5rem;
+  }
+  .resumen-card, .resumen-box, .resumen-panel {
+    margin-bottom: 0.5rem;
+    border-radius: 7px;
+    padding: 0.7rem;
+  }
+}
   .filosofia-text {
     font-size: 1.1rem;
     margin-bottom: 35px;
@@ -2383,6 +2453,37 @@ body {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .resumen-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .resumen-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  .resumen-card {
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 480px) {
+  .resumen-cards {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 0 0.2rem;
+  }
+  .resumen-card {
+    padding: 0.7rem 0.5rem;
+    border-radius: 7px;
+    font-size: 0.92rem;
+  }
 }
 
 .resumen-card {
